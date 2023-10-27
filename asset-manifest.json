@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3a077760.css",
-    "main.js": "/portfolio/static/js/main.bfca85f9.js",
+    "main.js": "/portfolio/static/js/main.b07b2fe2.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/argent_bank.png": "/portfolio/static/media/argent_bank.fb6ca0ea74ec6008f78a.png",
-    "static/media/_effce18f-a109-4896-901b-8ba65fca7b4f.jpg": "/portfolio/static/media/_effce18f-a109-4896-901b-8ba65fca7b4f.b8ccb72371f990d7a49d.jpg",
+    "static/media/woman_coding.jpg": "/portfolio/static/media/woman_coding.b8ccb72371f990d7a49d.jpg",
     "static/media/Ginger.ttf": "/portfolio/static/media/Ginger.8df07143ad0eb48e912f.ttf",
     "static/media/Ginger.woff": "/portfolio/static/media/Ginger.b988dc3e9cadb5c2fa89.woff",
     "static/media/forme_a_propos1.svg": "/portfolio/static/media/forme_a_propos1.f3809da567a370ba42162cfb386c2c62.svg",
@@ -12,11 +12,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/logo.svg": "/portfolio/static/media/logo.74c21769dc8789ee0e90816253815a8c.svg",
     "main.3a077760.css.map": "/portfolio/static/css/main.3a077760.css.map",
-    "main.bfca85f9.js.map": "/portfolio/static/js/main.bfca85f9.js.map",
+    "main.b07b2fe2.js.map": "/portfolio/static/js/main.b07b2fe2.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a077760.css",
-    "static/js/main.bfca85f9.js"
+    "static/js/main.b07b2fe2.js"
   ]
 }
