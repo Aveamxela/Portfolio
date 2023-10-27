@@ -1,0 +1,41 @@
+#about {
+    background-color: $light-yellow;
+    padding-top: 70px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    .container_about {
+        display: flex;
+        padding: 40px 60px 40px 0;
+        align-items: start;
+        justify-content: start;
+        justify-items: start;
+        gap: 10%;
+        align-items: center;
+        z-index: 3;
+
+        .womanCoding {
+            height: 100%;
+            width: 40%;
+            object-fit: cover;
+        }
+        .title_about {
+            margin-bottom: 5%;
+        }
+        .dev_about {
+            margin-bottom: 10%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 90%;
+        }
+    }
+    .shapeAbout {
+        transform: rotate(269deg);
+        position: absolute;
+        height: 50%;
+        bottom: -30%;
+        left: 74%;
+        z-index: 2;
+    }
+}
