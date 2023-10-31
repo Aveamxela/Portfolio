@@ -1,0 +1,140 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "type": "HTML/CSS",
+            "title": "Riding Cities",
+            "subtitle": "Site vitrine qui promeut le skate.",
+            "cover": "/portfolio/images/riding_cities.webp",
+            "alt": "Visuel du site",
+            "description": "Dans ce projet, j'ai appris les bases du langage HTML en mettant à jour la page web de l'association sportive Riding Cities.J'ai ajouté une nouvelle section avec des noms et des photos, et modifié la section du bouton pour inclure deux boutons de téléchargement. J'ai également utilisé les classes CSS existantes pour formater la page. Ce projet m'a permis de développer mes compétences en HTML et en intégration web.",
+            "technos": [
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "id": 2,
+            "type": "HTML/CSS",
+            "title": "Booki",
+            "subtitle": "Site d'une agence de voyage en ligne",
+            "cover": "/portfolio/images/booki.webp",
+            "alt": "Visuel du site",
+            "description": "Dans ce projet, j'ai été chargé de créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS. Travaillant en étroite collaboration avec l'UI designer et la CTO, j'ai intégré les maquettes desktop, tablette et mobile du site en veillant à ce que l'interface soit réactive et esthétiquement attrayante. ",
+            "technos": [
+                "HTML",
+                "CSS"            ]
+        },
+        {
+            "id": 3,
+            "type": "HTML/CSS",
+            "title": "Ohmyfood",
+            "subtitle": "Site de réservation de restaurants gastronomiques",
+            "cover": "/portfolio/images/ohmyfood.webp",
+            "alt": "Visuel du site",
+            "description": "J'ai participé au développement d'un site web en mobile first. J'ai intégré des maquettes Figma avec des animations CSS pour des réservations de restaurants gastronomiques, renforçant mes compétences en CSS",
+            "technos": [
+                "HTML",
+                "Sass"
+            ]
+        },
+        {
+            "id": 4,
+            "type": "Javascript",
+            "title": "Print-it",
+            "subtitle": "Site vitrine d'une imprimerie",
+            "cover": "/portfolio/images/print_it.webp",
+            "alt": "Visuel du site",
+            "description": "J'ai réalisé un projet axé sur JavaScript pour dynamiser un site web statique. Mon travail a consisté à mettre en place un carrousel interactif, permettant de changer d'images et de textes. Cette expérience m'a permis de maîtriser les fondamentaux de JavaScript en utilisant des event listeners et des conditions pour assurer un défilement infini.",
+            "technos": [
+                "Javascript"            ]
+        },
+        {
+            "id": 5,
+            "type": "Javascript",
+            "title": "Sophie Buel",
+            "subtitle": "Portfolio d'une archtecte d'inérieur",
+            "cover": "/portfolio/images/sophie_buel.webp",
+            "alt": "Visuel du site",
+            "description": "J'ai contribué à créer une page web dynamique en développant la page de présentation des travaux de l'architecte avec la possibilité de les filtrer, une page de connexion pour l'administrateur, et une modale d'upload/de suppression de médias.",
+            "technos": [
+                "API",
+                "Kanban",
+                "Javascript"
+            ]
+        },
+        {
+            "id": 6,
+            "type": "React",
+            "title": "Kasa",
+            "subtitle": "Site de location d'appartements entre particuliers",
+            "cover": "/portfolio/images/kasa.webp",
+            "alt": "Visuel du site",
+            "description": "J'ai développé une application web de location immobilière avec React pour Kasa, un acteur majeur de la location entre particuliers. Mon rôle a impliqué la création de composants React, la configuration des routes avec React Router, l'utilisation de Sass pour le CSS, et l'intégration d'animations CSS.",
+            "technos": [
+                "React",
+                "Sass",
+                "React Router",
+                "JSON"
+            ]
+        },
+        {
+            "id": 7,
+            "type": "Planification de projet",
+            "title": "MenuMaker",
+            "subtitle": "Outil de création/diffusion/impression de menu",
+            "cover": "/portfolio/images/menu_maker.webp",
+            "alt": "Visuel du site",
+            "description": "J'ai planifié et préparé le développement du site 'Menu Maker' pour le client Qwenta. Mon rôle a impliqué la réalisation d'une veille technologique, la définition des spécifications techniques et l'organisation de la gestion du projet en méthode agile.",
+            "technos": [
+                "Notion",
+                "Kanban",
+                "Feedly"
+            ]
+        },
+        {
+            "id": 8,
+            "type": "Optimisation",
+            "title": "Nina Carducci",
+            "subtitle": "Portfolio d'une photographe",
+            "cover": "/portfolio/images/nina_carducci.webp",
+            "alt": "Visuel du site",
+            "description": "J'ai optimisé le site web d'une photographe, Nina Carducci, en améliorant son référencement, ses performances, et son accessibilité. J'ai utilisé des techniques SEO, effectué un audit Lighthouse, évalué l'accessibilité et rendu un rapport d'optimisation à la cliente.",
+            "technos": [
+                "SEO",
+                "Lighthouse",
+                "Accessibilité",
+                "Wave",
+                "Métadonnées",
+                "Shéma.org"
+            ]
+        },
+        {
+            "id": 9,
+            "type": "Débogage",
+            "title": "724events",
+            "subtitle": "Site vitrine d'une agence d'événementiel",
+            "cover": "/portfolio/images/724events.webp",
+            "alt": "Visuel du site",
+            "description": "J'ai débogué le site web de l'agence d'événementiel 724events en utilisant les Chrome DevTools et j'ai complété un cahier de recette pour tester le site. J'ai résolu les problèmes mentionnés par l'ancien développeur ajouté quelques modifications et assuré le bon fonctionnement du site. ",
+            "technos": [
+                "rien",
+                "rien2"
+            ]
+        },
+        {
+            "id": 10,
+            "type": "React",
+            "title": "ArgentBank",
+            "subtitle": "Site d'une agence bancaire",
+            "cover": "/portfolio/images/argent_bank.webp",
+            "alt": "Visuel du site",
+            "description": "J'ai été chargé d'implémenter une application web réactive, la gestion de l'authentification des utilisateurs avec Redux, et l'optimisation du code conformément aux principes du Green Code. J'ai également participé à la conception des routes API pour les transactions de l'application.",
+            "technos": [
+                "React",
+                "Redux",
+                "Swagger"
+            ]
+        }
+    ]
+}
