@@ -7,11 +7,13 @@
             "subtitle": "Site vitrine qui promeut le skate.",
             "cover": "/portfolio/images/riding_cities.webp",
             "alt": "Visuel du site",
-            "description": "Dans ce projet, j'ai appris les bases du langage HTML en mettant à jour la page web de l'association sportive Riding Cities.J'ai ajouté une nouvelle section avec des noms et des photos, et modifié la section du bouton pour inclure deux boutons de téléchargement. J'ai également utilisé les classes CSS existantes pour formater la page. Ce projet m'a permis de développer mes compétences en HTML et en intégration web.",
+            "description": "Dans ce projet, j'ai appris les bases du langage HTML en ajoutant une nouvelle section avec des noms et des photos, en modifiant la section du bouton pour inclure deux boutons de téléchargement et j'ai également utilisé les classes CSS existantes pour formater la page.",
             "technos": [
-                "HTML",
-                "CSS"
-            ]
+                "/portfolio/images/html.png",
+                "/portfolio/images/css.png"
+            ],
+            "githubLink": "https://github.com/Aveamxela/Riding-Cities",
+            "siteLink": "https://aveamxela.github.io/Riding-Cities/"
         },
         {
             "id": 2,
@@ -20,10 +22,13 @@
             "subtitle": "Site d'une agence de voyage en ligne",
             "cover": "/portfolio/images/booki.webp",
             "alt": "Visuel du site",
-            "description": "Dans ce projet, j'ai été chargé de créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS. Travaillant en étroite collaboration avec l'UI designer et la CTO, j'ai intégré les maquettes desktop, tablette et mobile du site en veillant à ce que l'interface soit réactive et esthétiquement attrayante. ",
+            "description": "Dans ce projet, j'ai été chargé de créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS. J'ai intégré les maquettes desktop, tablette et mobile du site en veillant à ce que l'interface soit réactive et esthétiquement attrayante.",
             "technos": [
-                "HTML",
-                "CSS"            ]
+                "/portfolio/images/html.png",
+                "/portfolio/images/css.png"
+            ],
+            "githubLink": "https://github.com/Aveamxela/Projet-trois-page-d-accueil-de-Booki",
+            "siteLink": "https://aveamxela.github.io/Projet-trois-page-d-accueil-de-Booki/#"
         },
         {
             "id": 3,
@@ -34,9 +39,11 @@
             "alt": "Visuel du site",
             "description": "J'ai participé au développement d'un site web en mobile first. J'ai intégré des maquettes Figma avec des animations CSS pour des réservations de restaurants gastronomiques, renforçant mes compétences en CSS",
             "technos": [
-                "HTML",
-                "Sass"
-            ]
+                "/portfolio/images/html.png",
+                "/portfolio/images/css.png"
+            ],
+            "githubLink": "https://github.com/Aveamxela/Ohmyfood",
+            "siteLink": "https://aveamxela.github.io/Ohmyfood/"
         },
         {
             "id": 4,
@@ -45,9 +52,12 @@
             "subtitle": "Site vitrine d'une imprimerie",
             "cover": "/portfolio/images/print_it.webp",
             "alt": "Visuel du site",
-            "description": "J'ai réalisé un projet axé sur JavaScript pour dynamiser un site web statique. Mon travail a consisté à mettre en place un carrousel interactif, permettant de changer d'images et de textes. Cette expérience m'a permis de maîtriser les fondamentaux de JavaScript en utilisant des event listeners et des conditions pour assurer un défilement infini.",
+            "description": "J'ai utilisé JavaScript pour dynamiser un site web statique. J'ai mis en place un carrousel interactif, permettant de changer images et textes. Cette expérience m'a permis de maîtriser les fondamentaux de JavaScript en utilisant des event listeners et des conditions pour assurer un défilement infini.",
             "technos": [
-                "Javascript"            ]
+                "/portfolio/images/javascript.png"
+            ],
+            "githubLink": "https://github.com/Aveamxela/Print-it",
+            "siteLink": "https://aveamxela.github.io/Print-it/"
         },
         {
             "id": 5,
@@ -56,41 +66,46 @@
             "subtitle": "Portfolio d'une archtecte d'inérieur",
             "cover": "/portfolio/images/sophie_buel.webp",
             "alt": "Visuel du site",
-            "description": "J'ai contribué à créer une page web dynamique en développant la page de présentation des travaux de l'architecte avec la possibilité de les filtrer, une page de connexion pour l'administrateur, et une modale d'upload/de suppression de médias.",
+            "description": "J'ai contribué à créer une page web dynamique en développant la page des travaux de l'architecte avec la possibilité de les filtrer, une page de connexion pour l'administrateur, et une modale d'upload/de suppression de médias.",
             "technos": [
-                "API",
+                "/portfolio/images/javascript.png",
                 "Kanban",
-                "Javascript"
-            ]
+                "API"
+            ],
+            "githubLink": "https://github.com/Aveamxela/Projet-six-sophie-bluel",
+            "siteLink": ""
         },
         {
             "id": 6,
             "type": "React",
             "title": "Kasa",
-            "subtitle": "Site de location d'appartements entre particuliers",
+            "subtitle": "Site de location d'appartements",
             "cover": "/portfolio/images/kasa.webp",
             "alt": "Visuel du site",
-            "description": "J'ai développé une application web de location immobilière avec React pour Kasa, un acteur majeur de la location entre particuliers. Mon rôle a impliqué la création de composants React, la configuration des routes avec React Router, l'utilisation de Sass pour le CSS, et l'intégration d'animations CSS.",
+            "description": "J'ai développé une application web de location immobilière avec React. Mon rôle a impliqué la création de composants React, la configuration des routes avec React Router, l'utilisation de Sass pour le CSS, et l'intégration d'animations CSS.",
             "technos": [
-                "React",
-                "Sass",
-                "React Router",
-                "JSON"
-            ]
+                "/portfolio/images/react.png",
+                "/portfolio/images/sass.png",
+                "/portfolio/images/json.png",
+                "React Router"
+            ],
+            "githubLink": "https://github.com/Aveamxela/kasa",
+            "siteLink": "https://aveamxela.github.io/kasa/"
         },
         {
             "id": 7,
             "type": "Planification de projet",
             "title": "MenuMaker",
-            "subtitle": "Outil de création/diffusion/impression de menu",
+            "subtitle": "Outil de création / diffusion / impression de menu",
             "cover": "/portfolio/images/menu_maker.webp",
             "alt": "Visuel du site",
             "description": "J'ai planifié et préparé le développement du site 'Menu Maker' pour le client Qwenta. Mon rôle a impliqué la réalisation d'une veille technologique, la définition des spécifications techniques et l'organisation de la gestion du projet en méthode agile.",
             "technos": [
+                "/portfolio/images/feedly.png",
                 "Notion",
-                "Kanban",
-                "Feedly"
-            ]
+                "Kanban"
+            ],
+            "slideShowLink": "https://www.canva.com/design/DAFy7m7PBy8/_8Vaoo5Kk2OxTjrXJn0YvA/view?utm_content=DAFy7m7PBy8&utm_campaign=designshare&utm_medium=link&utm_source=editor"
         },
         {
             "id": 8,
@@ -107,7 +122,9 @@
                 "Wave",
                 "Métadonnées",
                 "Shéma.org"
-            ]
+            ],
+            "githubLink": "https://github.com/Aveamxela/Nina-Carducci",
+            "siteLink": "https://aveamxela.github.io/Nina-Carducci/"
         },
         {
             "id": 9,
@@ -118,9 +135,11 @@
             "alt": "Visuel du site",
             "description": "J'ai débogué le site web de l'agence d'événementiel 724events en utilisant les Chrome DevTools et j'ai complété un cahier de recette pour tester le site. J'ai résolu les problèmes mentionnés par l'ancien développeur ajouté quelques modifications et assuré le bon fonctionnement du site. ",
             "technos": [
-                "rien",
-                "rien2"
-            ]
+                "Chrome DevTools",
+                "Debug console"
+            ],
+            "githubLink": "https://github.com/Aveamxela/724events",
+            "siteLink": ""
         },
         {
             "id": 10,
@@ -131,10 +150,12 @@
             "alt": "Visuel du site",
             "description": "J'ai été chargé d'implémenter une application web réactive, la gestion de l'authentification des utilisateurs avec Redux, et l'optimisation du code conformément aux principes du Green Code. J'ai également participé à la conception des routes API pour les transactions de l'application.",
             "technos": [
-                "React",
-                "Redux",
+                "/portfolio/images/react.png",
+                "/portfolio/images/redux.png",
                 "Swagger"
-            ]
+            ],
+            "githubLink": "https://github.com/Aveamxela/ArgentBank",
+            "siteLink": ""
         }
     ]
 }
