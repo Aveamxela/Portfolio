@@ -1,48 +1,29 @@
 #projects {
+    padding: 80px;
     position: relative;
-    background-color: $yellow;
-    padding-top: 70px;
-    z-index: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(to top, $yellow, $light-yellow);
+    .titleProjects {
+        color: $black;
+    }
     .projects {
-        position: inherit;
-        z-index: 3;
-        padding: 0px 20%;
-    }
-    .title_projects{
-        color:$light-yellow;
-    }
-    img.leaves_projects{
-        position: absolute;
-    transform: scaleX(-1);
-    transform: rotate(271deg);
-    height: 15%;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    }
-    #triangle {
-        position: absolute;
-    bottom: 0;
-    left: 0;
-    border-bottom: 70vh solid $light-yellow;
-    border-right: 100vw solid transparent;
-    animation: 1s linear move;
-    z-index: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 60px 10px 0px 10px;
+        gap: 5%;
+        row-gap: 30px;
     }
 }
-#listOfProjects{
-    background-color: $white;
-}
-
-@keyframes move {
-    0% {
-        margin-top: 120px;
+@media screen and (max-width: 900px) {
+    #projects {
+        padding: 80px 40px;
+        .projects {
+            justify-content: space-around !important;
+        }
     }
-    100% {
-        margin-top: 0px;
+}
+@media screen and (max-width: 450px) {
+    #projects {
+        padding: 80px 10px;
     }
 }

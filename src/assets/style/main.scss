@@ -40,16 +40,42 @@ h5 {
 h6 {
     font-size: 20px;
 }
-p {
+b{
+    font-weight: 500;
+}
+p, input, textarea {
     font-family: "Heebo", sans-serif;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 18px;
+}
+label {
+    font-family: "Ginger", sans-serif;
+font-weight: 800;
+    font-size: 20px;
 }
 
 .portfolio {
     min-height: 100vh;
     overflow: hidden;
-    section {
-        height: calc(100vh - 70px);
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 60px;
     }
+}
+
+@media screen and (max-width: 425px) {
+    h1{
+        font-size: 45px;
+    }
+  h2{
+    font-size: 40px;
+  }
+  h5{
+    font-size: 25px;
+  }
+//   p{
+//     font-size:15px;
+//   }
 }

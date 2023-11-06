@@ -1,0 +1,60 @@
+#skills {
+    padding: 80px 40px;
+    background-color: $light-yellow;
+    position: relative;
+    .shapeSkills {
+        position: absolute;
+        top: -2px;
+        left: -50px;
+        min-width: 105%;
+        z-index: 0;
+        height: 280px;
+    }
+    .index-skills {
+        position: relative;
+        z-index: 1;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 50px;
+        padding-top: 120px;
+        flex-direction: row;
+        justify-content: center;
+        .icon-skills {
+            width: auto;
+            height: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #skills {
+        padding: 80px 40px;
+        .shapeSkills {
+            left: -2px;
+            min-width: 105%;
+            height: 200px;
+        }
+         ul {
+            padding-top: 60px;
+            gap: 20px;
+            .icon-skills {
+                height: 90px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    #skills {
+        padding: 80px 10px;
+        ul {
+            padding-top: 70px;
+            gap: 10px;
+            .icon-skills {
+                height: 80px;
+            }
+        }
+    }
+}

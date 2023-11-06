@@ -1,0 +1,116 @@
+.button {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: $black;
+    background-color: $yellow;
+    text-align: center;
+    padding: 15px;
+    transition: all 1s;
+    z-index: 4;
+    &:after,
+    &:before {
+        content: " ";
+        width: 10px;
+        height: 15px;
+        position: absolute;
+        border: 0px solid $white;
+        transition: all 1s;
+    }
+    &:after {
+        top: 0;
+        left: 0;
+        border-top: 4px solid $light-yellow;
+        border-left: 4px solid $light-yellow;
+        border-radius: 10px;
+    }
+    &:before {
+        bottom: 0;
+        right: 0;
+        border-bottom: 4px solid $light-yellow;
+        border-right: 4px solid $light-yellow;
+        border-radius: 10px;
+    }
+}
+button {
+    border: 0px;
+}
+
+.container-form-contact {
+    .button {
+        width: 150px;
+        margin-bottom: 60px;
+    }
+}
+.project {
+    .button {
+        display: none;
+    }
+    &:hover .button {
+        display: block;
+        animation-duration: 0.7s;
+        animation-name: slidein;
+        animation-fill-mode: forwards;
+    }
+    &:hover .button {
+        display: block;
+        animation-duration: 0.7s;
+        animation-name: slidein;
+        animation-fill-mode: forwards;
+    }
+    &:hover .button {
+        display: block;
+        animation-duration: 0.7s;
+        animation-name: slidein;
+        animation-fill-mode: forwards;
+    }
+}
+.project,
+#contact {
+    &:hover .button:before,
+    &:hover .button:after {
+        animation-name: border;
+        animation-duration: 0.7s;
+        animation-fill-mode: forwards;
+    }
+    .button:hover:before,
+    .button:hover:after {
+        animation-name: borderhover;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes borderhover {
+    from {
+        width: 100%;
+        height: 110%;
+    }
+
+    to {
+        width: 100vw;
+        height: 110%;
+    }
+}
+@keyframes border {
+    from {
+        width: 0%;
+        height: 0%;
+    }
+
+    to {
+        width: 100%;
+        height: 110%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container-form-contact {
+    .button {
+        align-self: center;
+    }
+}
+}

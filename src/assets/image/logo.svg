@@ -1,10 +1,1 @@
-<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 122.93">
-    <defs>
-        <style>.cls-1{font-size:107.46px;font-family:Ginger-Regular, Ginger;}.cls-2{fill:none;}</style>
-    </defs>
-    <text class="cls-1" transform="translate(0 91.23) scale(0.99 1)">A</text>
-    <path
-        d="M45.22,88.3l25-41.43L48.07,12h1.69L71.08,45.45,91.24,12H100L75.83,51.68,99.16,88.3H97.47L75,53.1,53.56,88.3Z"
-        transform="translate(1 2.93)" />
-    <line class="cls-2" x1="46" y1="90.93" x2="55" y2="90.93" />
-</svg>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.36 77.95"><polygon points="44.53 76.63 52.51 76.63 25.27 0 21.02 10.85 36.46 54.04 44.53 76.63"/><path d="M24.45,86,38.1,68.65l-.42-1.17S33.74,72.6,26.83,81.09c-9,8.61-15.74,4.53-15.74,4.53s-9.53-4-4.6-17.39L23.22,27l-.56-1.58S8.09,61.11,4.13,71.51C-.53,81.79,2.79,86.89,2.79,86.89S4.26,92,11.28,92.52,24.45,86,24.45,86Z" transform="translate(-1.64 -14.61)"/><polygon points="99.36 0.32 90.6 0.32 49.53 68.48 52.51 76.63 52.93 76.63 56.85 69.59 99.36 0.32"/><polygon points="49.15 0.32 47.42 0.32 96.83 76.62 98.52 76.62 49.15 0.32"/></svg>

@@ -1,149 +1,75 @@
 .project {
     position: relative;
-    width: 300px;
-    height: 200px;
-    margin: 10px;
+    width: 30%;
+    height: 250px;
     overflow: hidden;
     transition: all 0.35s;
-}
-
-.project img {
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-    border-radius: 30px 30px 0px 0px;
-    padding-top: 7px;
-}
-
-.project .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    z-index: 4;
     border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
-    &:before {
-        content: "";
-        position: absolute;
-        background-color: $yellow;
-        border-radius: 0 0 10px 10px;
+    box-shadow: 6px 6px 4px 0px rgba(0, 0, 0, 0.3);
+    img {
+        cursor: pointer;
         width: 100%;
-        height: 100%;
-        transition: transform 0.5s, background-size 2s;
-        transform: translateY(100%);
-        background-size: 100% 0%;
+        height: 86%;
+        object-fit: cover;
+        border-radius: 30px 30px 0px 0px;
     }
-
-    figcaption {
+    .overlay {
         position: absolute;
+        top: 0;
         bottom: 0;
-        width: 100%;
-        transition: transform 0.5s;
-        transform: translateY(0);
+        right: 0;
+        left: 0;
+        border-radius: 30px;
+        box-shadow: inset -6px 6px 8px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
 
-        .title {
-            font-size: 25px;
-            background-color: $yellow;
-            color: $light-yellow;
-            padding: 10px;
-            text-align: center;
-            padding: 5px 15px;
-            height: 100%;
-        }
-    }
-    .hover {
-        display: none;
-        position: absolute;
-        bottom: 0;
-        font-size: 17px;
-        font-weight: 500;
-        border-radius: 10px;
-        color: $black;
-        background-color: $yellow;
-        text-align: center;
-        padding: 15px;
-        transition: all 1s;
-        &:after,
         &:before {
-            content: " ";
-            width: 10px;
-            height: 15px;
+            content: "";
             position: absolute;
-            border: 0px solid $white;
-            transition: all 1s;
+            background-color: $yellow;
+            border-radius: 0 0 10px 10px;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s, background-size 2s;
+            transform: translateY(100%);
+            background-size: 100% 0%;
         }
-        &:after {
-            top: 0;
-            left: 0;
-            border-top: 4px solid $light-yellow;
-            border-left: 4px solid $light-yellow;
-            border-radius: 10px;
-        }
-        &:before {
+
+        figcaption {
+            position: absolute;
             bottom: 0;
-            right: 0;
-            border-bottom: 4px solid $light-yellow;
-            border-right: 4px solid $light-yellow;
-            border-radius: 10px;
+            width: 100%;
+            height: 14%;
+            transition: transform 0.5s;
+            transform: translateY(0);
+
+            .title {
+                font-size: 25px;
+                background-color: $yellow;
+                color: $light-yellow;
+                padding: 10px;
+                text-align: center;
+                padding: 5px 15px;
+                height: 100%;
+            }
         }
     }
-}
-
-.project:hover .overlay:before {
-    transform: translateY(0);
-    background-size: 100% 100%; /* Remplit le conteneur */
-}
-.project:hover figcaption {
-    transform: translateY(-150px) scale(1.3,1.3);
-}
-
-.project:hover .hover {
-    display: block;
-    animation-duration: 0.7s;
-    animation-name: slidein;
-    animation-fill-mode: forwards;
-}
-.project:hover .hover:before,
-.project:hover .hover:after {
-    animation-name: border;
-    animation-duration: 0.7s;
-    animation-fill-mode: forwards;
-}
-.project .hover:hover:before,
-.project .hover:hover:after {
-    animation-name: borderhover;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes borderhover {
-    from {
-        width: 100%;
-        height: 110%;
+    &:hover .overlay:before {
+        transform: translateY(0);
+        background-size: 100% 100%; /* Remplit le conteneur */
     }
-
-    to {
-        width: 200%;
-        height: 110%;
+    &:hover figcaption {
+        transform: translateY(-180px) scale(1.3, 1.3);
     }
+    
 }
-@keyframes border {
-    from {
-        width: 0%;
-        height: 0%;
-    }
 
-    to {
-        width: 100%;
-        height: 110%;
-    }
-}
+
 
 @keyframes slidein {
     from {
@@ -152,5 +78,15 @@
 
     to {
         bottom: 30%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .project {
+        width: 47%;
+    }
+}
+@media screen and (max-width: 530px) {
+    .project {
+        width: 100%;
     }
 }

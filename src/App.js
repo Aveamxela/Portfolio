@@ -5,11 +5,11 @@ import Main from "./Main";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Main />}/>
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter basename={window.location.pathname || ""}>
+          <Routes>
+              <Route path="/" element={<Main />} />
+          </Routes>
+      </BrowserRouter>
   );
 }
 
