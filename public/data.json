@@ -5,7 +5,7 @@
             "type": "HTML/CSS",
             "title": "Riding Cities",
             "subtitle": "Site vitrine qui promeut le skate.",
-            "cover": "/portfolio/images/riding_cities.webp",
+            "cover": "/images/riding_cities.webp",
             "alt": "Visuel du site",
             "description": "Dans ce projet, j'ai appris les bases du langage HTML en ajoutant une nouvelle section avec des noms et des photos, en modifiant la section du bouton pour inclure deux boutons de téléchargement et j'ai également utilisé les classes CSS existantes pour formater la page.",
             "technos": [
@@ -20,7 +20,7 @@
             "type": "HTML/CSS",
             "title": "Booki",
             "subtitle": "Site d'une agence de voyage en ligne",
-            "cover": "/portfolio/images/booki.webp",
+            "cover": "./images/booki.webp",
             "alt": "Visuel du site",
             "description": "Dans ce projet, j'ai été chargé de créer la page d'accueil d'une agence de voyage en utilisant HTML et CSS. J'ai intégré les maquettes desktop, tablette et mobile du site en veillant à ce que l'interface soit réactive et esthétiquement attrayante.",
             "technos": [
