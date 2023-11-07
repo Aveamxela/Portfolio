@@ -43,6 +43,22 @@ button {
     .button {
         width: 150px;
         margin-bottom: 60px;
+            background-color: $light-yellow;
+
+            &:after {
+        top: 0;
+        left: 0;
+        border-top: 4px solid $yellow;
+        border-left: 4px solid $yellow;
+        border-radius: 10px;
+    }
+    &:before {
+        bottom: 0;
+        right: 0;
+        border-bottom: 4px solid $yellow;
+        border-right: 4px solid $yellow;
+        border-radius: 10px;
+    }
     }
 }
 .project {

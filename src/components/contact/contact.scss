@@ -1,28 +1,29 @@
 #contact {
-    padding-top: 80px;
     background-color: $light-yellow;
+    padding-top:40px;
+    border-top:1px solid black;
+.error-message{
+                color:red;
+                padding-bottom: 20px;
+            }
     .container-form-contact {
         position: relative;
-        margin-top: 60px;
         padding: 60px 60px 120px 60px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $yellow;
-        border-radius: 15% 15% 0 0;
-
         .form-contact {
             display: flex;
             flex-direction: column;
-            width: 70%;
+            width: 50%;
             label {
                 margin-bottom: 10px;
             }
             input,
             textarea {
-                padding: 20px;
+                padding: 15px;
                 margin-bottom: 5%;
-                border: 1px solid $light-yellow;
+                border: 2px solid $yellow;
                 border-radius: 10px;
                 background-color: $light-yellow;
             }

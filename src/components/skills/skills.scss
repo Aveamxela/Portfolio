@@ -1,23 +1,27 @@
 #skills {
-    padding: 80px 40px;
+    padding: 0px 40px 60px 40px;
     background-color: $light-yellow;
     position: relative;
+   
     .shapeSkills {
         position: absolute;
         top: -2px;
         left: -50px;
         min-width: 105%;
         z-index: 0;
-        height: 280px;
+        height: 200px;
     }
     .index-skills {
         position: relative;
         z-index: 1;
+         display: flex;
+    align-items: center;
+    flex-direction: column;
     }
     ul {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+        width: 70%;
         gap: 50px;
         padding-top: 120px;
         flex-direction: row;
