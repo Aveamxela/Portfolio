@@ -5,7 +5,7 @@ export default function Modal({ projects, projectId, onClose }) {
     const technos = project.technos;
 
     const listOfTechnos = (project) => {
-        const value = "/portfolio";
+        const value = "/images";
 
         return technos.map((techno, index) => (
             <li key={index}>
