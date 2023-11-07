@@ -17,6 +17,7 @@
         background-color: $light-yellow;
         border-radius: 30px;
         .close-icon {
+            cursor: pointer;
             background-color: transparent;
             position: absolute;
             top: 10px;
