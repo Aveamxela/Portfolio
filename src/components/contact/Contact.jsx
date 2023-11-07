@@ -8,11 +8,12 @@ export default function Contact() {
                 <form
                     className="form-contact"
                     name="portfolioContact"
-                    method="post"
+                    method="POST"
                     data-netlify="true"
+                    data-netlify-honeypot="bot-field"
                     onSubmit="submit"
                 >
-                    <input type="hidden" name="portfolioContact" value="contact" />
+                    <input type="hidden" name="portfolioContact" value="portfolioContact" />
 
                     <label for="name">Nom :</label>
                     <input type="text" name="name" />
