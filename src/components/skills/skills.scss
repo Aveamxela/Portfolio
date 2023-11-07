@@ -2,11 +2,11 @@
     padding: 0px 40px 60px 40px;
     background-color: $light-yellow;
     position: relative;
-   
+
     .shapeSkills {
         position: absolute;
         top: -2px;
-        left: -50px;
+        left: -10px;
         min-width: 105%;
         z-index: 0;
         height: 200px;
@@ -14,9 +14,9 @@
     .index-skills {
         position: relative;
         z-index: 1;
-         display: flex;
-    align-items: center;
-    flex-direction: column;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     ul {
         display: flex;
@@ -32,7 +32,21 @@
         }
     }
 }
-
+@media screen and (max-width: 1088px) {
+    #skills {
+        ul {
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width: 955px) {
+    #skills {
+        ul {
+            width: 95%;
+            gap: 20px;
+        }
+    }
+}
 @media screen and (max-width: 768px) {
     #skills {
         padding: 80px 40px;
@@ -41,9 +55,8 @@
             min-width: 105%;
             height: 200px;
         }
-         ul {
+        ul {
             padding-top: 60px;
-            gap: 20px;
             .icon-skills {
                 height: 90px;
             }
