@@ -10,7 +10,6 @@ export default function Contact() {
                     name="portfolioContact"
                     method="post"
                     data-netlify="true"
-                    data-netlify-honeypot="bot-field"
                     onSubmit="submit"
                 >
                     <input type="hidden" name="portfolioContact" value="contact" />
