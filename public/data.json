@@ -73,7 +73,7 @@
                 "API"
             ],
             "githubLink": "https://github.com/Aveamxela/Projet-six-sophie-bluel",
-            "siteLink": ""
+            "siteLink": "https://aveamxela.github.io/Projet-six-sophie-bluel/"
         },
         {
             "id": 6,
@@ -139,7 +139,7 @@
                 "Debug console"
             ],
             "githubLink": "https://github.com/Aveamxela/724events",
-            "siteLink": ""
+            "siteLink": "https://ax-724events.netlify.app/"
         },
         {
             "id": 10,
@@ -155,7 +155,7 @@
                 "Swagger"
             ],
             "githubLink": "https://github.com/Aveamxela/ArgentBank",
-            "siteLink": ""
+            "siteLink": "https://ax-argentbank.netlify.app/"
         }
     ]
 }
