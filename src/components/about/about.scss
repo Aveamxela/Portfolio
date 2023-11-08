@@ -1,12 +1,11 @@
 #about {
     background-color: $light-yellow;
     padding-top: 70px;
-    padding-bottom:80px;
+    padding-bottom: 80px;
     z-index: 1;
     position: relative;
     display: flex;
     height: calc(100vh - 70px);
-
     .container_about {
         display: flex;
         padding: 40px 60px 40px 0;
@@ -16,7 +15,6 @@
         gap: 5%;
         align-items: center;
         z-index: 3;
-
         .womanCoding {
             height: 100%;
             width: 30%;
@@ -56,7 +54,7 @@
         align-content: center;
         padding: 0px !important;
         .womanCoding {
-            max-height: 50% ;
+            max-height: 50%;
             width: 100% !important;
             object-position: right 17%;
         }
@@ -68,16 +66,15 @@
         justify-content: flex-start;
         overflow-y: auto;
         .dev_about {
-                align-items: center;
-            }
-        .description_about{
+            align-items: center;
+        }
+        .description_about {
             margin: 0px 5%;
         }
-
     }
 }
 @media screen and (max-width: 425px) {
-  .womanCoding {
-            max-height: 30% !important;
-        }
+    .womanCoding {
+        max-height: 30% !important;
+    }
 }

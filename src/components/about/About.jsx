@@ -1,6 +1,6 @@
 import shapeAbout from "../../assets/image/forme_a_propos1.svg";
 
-import womanCoding from "../../assets/image/woman_coding.webP";
+import womanCoding from "../../assets/image/woman_coding.webp";
 
 export default function About() {
     return (
