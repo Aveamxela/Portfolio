@@ -15,7 +15,7 @@
         width: 80%;
         height: auto;
         background-color: $light-yellow;
-        border-radius: 30px;
+        border-radius: 10px;
         .close-icon {
             cursor: pointer;
             background-color: transparent;
@@ -89,7 +89,7 @@
                 .project-btn1,
                 .project-btn2 {
                     background-color: $yellow;
-                    border-radius: 30px;
+                    border-radius: 10px;
                     padding: 10px 30px;
                     font-weight: 500;
                     color: $light-yellow;
