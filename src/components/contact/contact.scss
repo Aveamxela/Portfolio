@@ -1,11 +1,11 @@
 #contact {
     background-color: $light-yellow;
-    padding-top:40px;
-    border-top:1px solid black;
-.error-message{
-                color:red;
-                padding-bottom: 20px;
-            }
+    padding-top: 40px;
+    border-top: 1px solid black;
+    .error-message {
+        color: red;
+        padding-bottom: 20px;
+    }
     .container-form-contact {
         position: relative;
         padding: 60px 60px 120px 60px;
@@ -26,7 +26,7 @@
                 border: 2px solid $yellow;
                 border-radius: 10px;
                 background-color: $light-yellow;
-                &:focus{
+                &:focus {
                     border: 2px solid $black;
                     outline: none;
                 }
@@ -36,11 +36,10 @@
 }
 
 @media screen and (max-width: 768px) {
-        .container-form-contact {
+    .container-form-contact {
         padding: 60px 0px 120px 0px !important;
-        .form-contact{
-        width: 80% !important;
-
+        .form-contact {
+            width: 80% !important;
         }
-        }
+    }
 }

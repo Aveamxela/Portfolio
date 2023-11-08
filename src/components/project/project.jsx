@@ -11,7 +11,7 @@ export default function Project() {
 
     const openModal = (projectId) => {
         setShowModal(true);
-        setSelectedProjectId(projectId)
+        setSelectedProjectId(projectId);
     };
     const closeModal = () => {
         setShowModal(false);
@@ -61,8 +61,12 @@ export default function Project() {
             })}
 
             {showModal && selectedProjectId !== null && (
-                 <Modal projects={projects} projectId={selectedProjectId} onClose={closeModal} />
-                 )}
+                <Modal
+                    projects={projects}
+                    projectId={selectedProjectId}
+                    onClose={closeModal}
+                />
+            )}
         </>
     );
 }

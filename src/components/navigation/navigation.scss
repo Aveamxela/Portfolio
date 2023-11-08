@@ -78,6 +78,7 @@
         }
         .burger-bar {
             width: 0;
+
             &::before {
                 transform: rotate(45deg);
             }
@@ -130,10 +131,9 @@
     .burger-bar::before,
     .burger-bar::after {
         display: block;
-        width: 30px;
+        width: 33px;
         height: 3px;
         position: relative;
-        left: 3px;
         border-radius: 3px;
         background: $white;
         transition: all 0.5s ease-in-out;
@@ -142,7 +142,6 @@
     .burger-bar::after {
         content: "";
         position: absolute;
-        left: 0;
     }
     .burger-bar::before {
         transform: translateY(-12px);

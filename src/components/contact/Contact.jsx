@@ -58,6 +58,7 @@ export default function Contact() {
 
                     <label for="message">Message :</label>
                     <textarea name="message"></textarea>
+
                     <Button text="Envoyer" type="submit" />
                 </form>
             </div>

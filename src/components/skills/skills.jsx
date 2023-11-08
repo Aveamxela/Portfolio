@@ -8,7 +8,7 @@ import Sass from "../../assets/image/sass.png";
 import Github from "../../assets/image/github.png";
 import Figma from "../../assets/image/figma.png";
 import Wordpress from "../../assets/image/wordpress.png";
-import Wave from "../../assets/image/waveSkills.png"
+import Wave from "../../assets/image/waveSkills.png";
 
 export default function Skills() {
     return (

@@ -55,7 +55,7 @@ export default function Modal({ projects, projectId, onClose }) {
                 </div>
             );
         }
-    }
+    };
 
     return (
         <div className="modal-container" onClick={onClose}>
@@ -79,7 +79,7 @@ export default function Modal({ projects, projectId, onClose }) {
                             {listOfTechnos(project)}
                         </ul>
                     </div>
-                        {btnModal(project)}
+                    {btnModal(project)}
                 </div>
             </div>
         </div>
