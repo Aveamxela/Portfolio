@@ -26,6 +26,10 @@
                 border: 2px solid $yellow;
                 border-radius: 10px;
                 background-color: $light-yellow;
+                &:focus{
+                    border: 2px solid $black;
+                    outline: none;
+                }
             }
         }
     }
