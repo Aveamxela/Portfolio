@@ -5,9 +5,9 @@ import Button from "../button/button";
 
 export default function Project() {
     const [showModal, setShowModal] = useState(false);
-    const [projects, setProjects] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [selectedProjectId, setSelectedProjectId] = useState(null);
+    const [projects, setProjects] = useState([]); // Stocke les données des projets.
+    // const [loading, setLoading] = useState(false);
+    const [selectedProjectId, setSelectedProjectId] = useState(null);//Stocke l'ID du projet sélectionné.
 
     const openModal = (projectId) => {
         setShowModal(true);
@@ -16,27 +16,27 @@ export default function Project() {
     const closeModal = () => {
         setShowModal(false);
     };
-
+// Chargement des données des projets.
     useEffect(() => {
-        setLoading(true);
+        // setLoading(true);
         fetchProjectsData()
             .then((projects) => {
                 setProjects(projects);
-                setLoading(false);
+                // setLoading(false);
             })
             .catch((error) => {
                 console.log(error);
             });
     }, []);
 
-    if (loading) {
-        return (
-            <>
-                {/* A styliser */}
-                <p>Loadinnnggggggg ....</p>
-            </>
-        );
-    }
+    // if (loading) {
+    //     return (
+    //         <>
+    //             {/* A styliser */}
+    //             <p>Chargement....</p>
+    //         </>
+    //     );
+    // }
 
     return (
         <>
@@ -52,14 +52,11 @@ export default function Project() {
                                 text="En savoir plus"
                                 onClick={() => openModal(project.id)}
                             />
-                            {/* <button className="hover" onClick={() => openModal(project.id)}>
-                                En savoir plus
-                            </button> */}
                         </div>
                     </figure>
                 );
             })}
-
+            
             {showModal && selectedProjectId !== null && (
                 <Modal
                     projects={projects}

@@ -1,5 +1,3 @@
-// import Logo from "../../assets/image/logo.svg"
-
 export default function Loader() {
     return (
         <div className="loader">

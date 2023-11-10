@@ -17,7 +17,7 @@
         height: auto;
     }
     .svg-animation {
-        animation: moveAndWave 0.4s 2.5s ease forwards;
+        animation: move 0.4s 2.5s ease forwards;
     }
     .line-A,
     .big-line-X,
@@ -43,13 +43,12 @@
         visibility: hidden;
     }
 }
-@keyframes moveAndWave {
+@keyframes move {
     0% {
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%);
         height: 120px;
     }
     100% {
-        transform: rotate(0deg);
         top: 0;
         left: 0;
         height: 50px;
@@ -59,28 +58,28 @@
 }
 @keyframes draw {
     0% {
-        stroke-dasharray: 0;
-        stroke-dashoffset: 100;
+        stroke-dasharray: 0; /* Pas de traits */
+        stroke-dashoffset: 100; /* Décalage du tracé*/
         fill-opacity: 0;
         stroke-width: 0;
     }
     10% {
-        stroke-width: 0.3;
+        stroke-width: 0.3; /* Largeur du contour */
     }
     50% {
         fill-opacity: 0;
         stroke-width: 0.3;
     }
     60% {
-        fill-opacity: 0.5;
+        fill-opacity: 0.5; /* Remplissage partiel*/
     }
     90% {
         fill-opacity: 1;
     }
     100% {
-        stroke-dasharray: 100;
-        stroke-dashoffset: 0;
-        stroke-width: 0;
-        fill-opacity: 1;
+        stroke-dasharray: 100; /* Pas de trait complet*/
+        stroke-dashoffset: 0;/* Pas de décalage du tracé */
+        stroke-width: 0;/* Pas de contour */
+        fill-opacity: 1;/* Remplissage complet*/
     }
 }

@@ -1,12 +1,12 @@
 import { AiFillCloseCircle } from "react-icons/ai";
 
 export default function Modal({ projects, projectId, onClose }) {
+    // Trouver le projet correspondant à l'ID sélectionné
     const project = projects.find((project) => project.id === projectId);
     const technos = project.technos;
 
     const listOfTechnos = (project) => {
         const value = "/images";
-
         return technos.map((techno, index) => (
             <li key={index}>
                 {techno.toLowerCase().startsWith(value.toLowerCase()) ? (
@@ -17,7 +17,7 @@ export default function Modal({ projects, projectId, onClose }) {
             </li>
         ));
     };
-
+    
     const btnModal = (project) => {
         if (project.githubLink) {
             return (

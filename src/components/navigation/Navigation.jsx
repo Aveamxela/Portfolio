@@ -3,20 +3,23 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { useState } from "react";
 
 export default function Navigation() {
+    // Fait défiler la page vers le haut lorsque le logo est cliqué.
     const scrollToTop = () => {
         scroll.scrollToTop();
     };
-
+    // Etat qui permet d'afficher ou de masquer les liens de navigations
     const [showLinks, setShowLinks] = useState(false);
-
+    // Affiche les liens de navigation du menu burger
     const handleShowLinks = () => {
         setShowLinks(!showLinks);
     };
+    // Masque les liens de navigation du menu burger
     const handleHideLinks = () => {
         setShowLinks(false);
     };
     return (
         <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
+            {/* Si liens de navigation affichés, masquer logo, sinon l'afficher */}
             <img
                 className={`${showLinks ? "none" : "navbar__logo"}`}
                 src={logo}
@@ -27,11 +30,16 @@ export default function Navigation() {
             <ul className="navbar__links" onClick={handleHideLinks}>
                 <li className="navbar__item slideInDown-1 ">
                     <Link
+                        // quand section active (dessus)
                         activeClass="active"
                         to="about"
+                        // active la détection du lien et suit la position de la page
                         spy={true}
+                        // Cet attribut active l'animation de défilement doux.
                         smooth={true}
+                        // décalage (en pixels) par rapport à la cible de l'ancre
                         offset={-70}
+                        // durée de l'animation de défilement doux
                         duration={500}
                         onClick={handleHideLinks}
                         className="navbar__link"
@@ -73,7 +81,7 @@ export default function Navigation() {
                         to="contact"
                         spy={true}
                         smooth={true}
-                        offset={-70}
+                        offset={-65}
                         duration={500}
                         onClick={handleHideLinks}
                         className="navbar__link"
@@ -82,6 +90,7 @@ export default function Navigation() {
                     </Link>
                 </li>
             </ul>
+            {/* Bouton burger pour afficher/masquer les liens de navigation*/}
             <button className="navbar__burger" onClick={handleShowLinks}>
                 <span className="burger-bar"></span>
             </button>

@@ -1,5 +1,4 @@
 import shapeAbout from "../../assets/image/forme_a_propos1.svg";
-
 import womanCoding from "../../assets/image/woman_coding.webp";
 
 export default function About() {
@@ -15,7 +14,7 @@ export default function About() {
                     <h2 className="title_about">Maëva Froger</h2>
                     <div className="dev_about">
                         <h5>Intégratrice web</h5>
-                        <h5> Développeuse front-end</h5>
+                        <h5>Développeuse front-end</h5>
                     </div>
                     <p className="description_about">
                         Mon voyage a débuté avec des études en littérature et
