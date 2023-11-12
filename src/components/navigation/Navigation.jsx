@@ -38,7 +38,7 @@ export default function Navigation() {
                         // Cet attribut active l'animation de défilement doux.
                         smooth={true}
                         // décalage (en pixels) par rapport à la cible de l'ancre
-                        offset={-70}
+                        offset={-80}
                         // durée de l'animation de défilement doux
                         duration={500}
                         onClick={handleHideLinks}
@@ -53,7 +53,7 @@ export default function Navigation() {
                         to="projects"
                         spy={true}
                         smooth={true}
-                        offset={-70}
+                        offset={-79}
                         duration={500}
                         onClick={handleHideLinks}
                         className="navbar__link"
@@ -67,7 +67,7 @@ export default function Navigation() {
                         to="skills"
                         spy={true}
                         smooth={true}
-                        offset={-70}
+                        offset={-73}
                         duration={500}
                         onClick={handleHideLinks}
                         className="navbar__link"
@@ -81,7 +81,7 @@ export default function Navigation() {
                         to="contact"
                         spy={true}
                         smooth={true}
-                        offset={-65}
+                        offset={-67}
                         duration={500}
                         onClick={handleHideLinks}
                         className="navbar__link"
