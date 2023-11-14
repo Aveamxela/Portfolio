@@ -21,7 +21,10 @@
             object-fit: cover;
         }
         .content_about {
+            display: flex;
+            flex-direction: column;
             max-height: 100%;
+            align-items: flex-start;
 
             .title_about {
                 margin-bottom: 20px;
@@ -30,8 +33,14 @@
                 margin-bottom: 20px;
                 display: flex;
                 flex-direction: column;
+                align-items: flex-start;
                 gap: 10px;
                 width: 90%;
+                & > h2 {
+                    font-family: "Heebo", sans-serif;
+                    font-weight: 300;
+                    font-size: 30px;
+                }
             }
             .description_about {
                 line-height: 1.3em;
@@ -63,11 +72,13 @@
     .content_about {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
+        align-items: center !important;
         overflow-y: auto;
         .dev_about {
-            align-items: center;
+            align-items: center !important;
+            .subtitle_about {
+                font-size: 25px !important;
+            }
         }
         .description_about {
             margin: 0px 5%;

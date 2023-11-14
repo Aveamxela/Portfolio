@@ -14,7 +14,7 @@ export default function Contact() {
         // Vérification si les champs sont remplis
         if (!name || !email || !message) {
             setErrorMessage("Veuillez remplir tous les champs du formulaire.");
-             e.target.reset();
+            e.target.reset();
         } else {
             setShowModal(true);
             setErrorMessage("");
@@ -29,7 +29,7 @@ export default function Contact() {
 
     return (
         <section id="contact">
-            <h1>Contact</h1>
+            <h2>Contact</h2>
 
             <div className="container-form-contact">
                 <form
@@ -54,14 +54,14 @@ export default function Contact() {
                         value="portfolioContact"
                     />
 
-                    <label for="name">Nom :</label>
-                    <input type="text" name="name" />
+                    <label htmlFor="name">Nom :</label>
+                    <input type="text" name="name" id="name" />
 
-                    <label for="email">Email :</label>
-                    <input type="email" name="email" />
+                    <label htmlFor="email">Email :</label>
+                    <input type="email" name="email" id="email" />
 
-                    <label for="message">Message :</label>
-                    <textarea name="message"></textarea>
+                    <label htmlFor="message">Message :</label>
+                    <textarea name="message" id="message"></textarea>
 
                     <Button text="Envoyer" type="submit" />
                 </form>

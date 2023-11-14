@@ -9,13 +9,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
-    .navbar__logo {
-        position: absolute;
-        left: 40px;
-        height: 50px;
-        padding: 10px 0px;
-        cursor: pointer;
-    }
     .navbar__links {
         display: flex;
         align-items: center;
@@ -51,6 +44,14 @@
             transform: translateX(94%);
         }
     }
+    .logo {
+        position: absolute;
+        left: 40px;
+        height: 50px;
+        padding: 10px 0px;
+        cursor: pointer;
+        z-index:6;
+    };
     .navbar__burger {
         visibility: hidden;
     }

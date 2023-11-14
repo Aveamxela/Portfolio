@@ -15,7 +15,7 @@ export default function Skills() {
         <section id="skills">
             <img className="shapeSkills" src={Wave} alt="" />
             <div className="index-skills">
-                <h1 className="title-skills">Compétences</h1>
+                <h2 className="title-skills">Compétences</h2>
                 <ul>
                     <li>
                         <img

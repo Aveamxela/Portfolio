@@ -11,10 +11,12 @@ export default function About() {
                     alt="Woman's coding illustration"
                 />
                 <div className="content_about">
-                    <h2 className="title_about">Maëva Froger</h2>
+                    <h1 className="title_about">Maëva Froger</h1>
                     <div className="dev_about">
-                        <h5>Intégratrice web</h5>
-                        <h5>Développeuse front-end</h5>
+                        <h2 >Intégratrice web</h2>
+                        <h2 >
+                            Développeuse front-end
+                        </h2>
                     </div>
                     <p className="description_about">
                         Mon voyage a débuté avec des études en littérature et

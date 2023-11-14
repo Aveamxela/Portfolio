@@ -71,12 +71,18 @@
                     flex-wrap: wrap;
                     gap: 15px;
                     margin-top: 15px;
+                    li > img {
+                        width: 45px;
+                        gap: 15px;
+                    }
+                }
+                .text-technos {
                     li > p {
                         font-weight: 500;
                     }
-                    li > img {
-                        width: 45px;
-                    }
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 15px;
                 }
             }
             .project-github-website {
