@@ -5,14 +5,34 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap");
 
-$yellow: #fa9f41;
-$light-yellow: #fdefe5;
-$black: #000000;
-$white: #ffffff;
+:root {
+    --main-color: #fa9f41;
+    --secondary-color: #fdefe5;
+    --tertiary-color: #000000;
+    --last-color: #ffffff;
+    --color-nav: rgba(253, 239, 229, 0.6);
+}
+[data-theme="dark"] {
+    --main-color: #baa284;
+    --secondary-color: #191c1e;
+    --tertiary-color: #f6f4ee;
+    --last-color: #ffffff;
+    --color-nav: rgba(25, 28, 30, 0.6);
 
+    // transition: all 3s ease-in-out;
+}
+[data-theme="dark"] li > img {
+    filter: invert(99%) sepia(16%) saturate(2671%) hue-rotate(202deg)
+        brightness(120%) contrast(91%);
+}
+section {
+    transition: all 0.05s ease-in-out;
+}
 body {
     font-family: "Heebo", sans-serif;
     font-weight: 300;
+    color: var(--tertiary-color);
+    // transition: all 0.05s ease-in-out;
 }
 h1 {
     font-family: "Ginger", sans-serif;
@@ -25,8 +45,7 @@ h2 {
 
     font-size: 70px;
     font-weight: 600;
-        text-align: center;
-
+    text-align: center;
 }
 h3 {
     font-family: "Ginger", sans-serif;

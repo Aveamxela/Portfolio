@@ -1,6 +1,6 @@
 #skills {
     padding: 0px 40px 60px 40px;
-    background-color: $light-yellow;
+    background-color: var(--secondary-color);
     position: relative;
 
     .shapeSkills {
@@ -32,6 +32,8 @@
         }
     }
 }
+
+
 @media screen and (max-width: 1088px) {
     #skills {
         ul {

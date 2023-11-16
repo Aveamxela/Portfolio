@@ -14,7 +14,7 @@
         margin-top: 70px;
         width: 80%;
         height: auto;
-        background-color: $light-yellow;
+        background-color: var(--secondary-color);
         border-radius: 10px;
         .close-icon {
             cursor: pointer;
@@ -94,28 +94,29 @@
 
                 .project-btn1,
                 .project-btn2 {
-                    background-color: $yellow;
+                    background-color: var(--main-color);
                     border-radius: 10px;
                     padding: 10px 30px;
                     font-weight: 500;
-                    color: $light-yellow;
+                    color: var(--secondary-color);
                     box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.3);
                     text-decoration: none;
                     width: auto;
                     transition: all 0.5s;
                 }
                 .project-btn1:hover {
-                    background-color: $black;
+                    background-color: var(--tertiary-color);
                     box-shadow: 3px 4px 0px rgba(250, 159, 65, 0.5);
                 }
                 .project-btn2:hover {
-                    background-color: $black;
+                    background-color: var(--tertiary-color);
                     box-shadow: 3px 4px 0px rgba(250, 159, 65, 0.5);
                 }
             }
         }
     }
 }
+
 @media screen and (max-width: 830px) {
     .modal-content {
         display: flex !important;

@@ -1,5 +1,5 @@
 #contact {
-    background-color: $light-yellow;
+    background-color: var(--secondary-color);
     padding-top: 40px;
     border-top: 1px solid black;
     .error-message {
@@ -23,11 +23,11 @@
             textarea {
                 padding: 15px;
                 margin-bottom: 5%;
-                border: 2px solid $yellow;
+                border: 2px solid var(--main-color);
                 border-radius: 10px;
-                background-color: $light-yellow;
+                background-color: var(--secondary-color);
                 &:focus {
-                    border: 2px solid $black;
+                    border: 2px solid var(--tertiary-color);
                     outline: none;
                 }
             }

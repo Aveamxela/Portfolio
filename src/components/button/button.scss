@@ -5,8 +5,8 @@
     font-size: 17px;
     font-weight: 500;
     border-radius: 10px;
-    color: $black;
-    background-color: $yellow;
+    color: var(--tertiary-color);
+    background-color: var(--main-color);
     text-align: center;
     padding: 15px;
     transition: all 1s;
@@ -17,21 +17,21 @@
         width: 10px;
         height: 15px;
         position: absolute;
-        border: 0px solid $white;
+        border: 0px solid var(--last-color);
         transition: all 1s;
     }
     &:after {
         top: 0;
         left: 0;
-        border-top: 4px solid $light-yellow;
-        border-left: 4px solid $light-yellow;
+        border-top: 4px solid var(--secondary-color);
+        border-left: 4px solid var(--secondary-color);
         border-radius: 10px;
     }
     &:before {
         bottom: 0;
         right: 0;
-        border-bottom: 4px solid $light-yellow;
-        border-right: 4px solid $light-yellow;
+        border-bottom: 4px solid var(--secondary-color);
+        border-right: 4px solid var(--secondary-color);
         border-radius: 10px;
     }
 }
@@ -43,22 +43,22 @@ button {
     .button {
         width: 150px;
         margin-bottom: 60px;
-            background-color: $light-yellow;
+        background-color: var(--secondary-color);
 
-            &:after {
-        top: 0;
-        left: 0;
-        border-top: 4px solid $yellow;
-        border-left: 4px solid $yellow;
-        border-radius: 10px;
-    }
-    &:before {
-        bottom: 0;
-        right: 0;
-        border-bottom: 4px solid $yellow;
-        border-right: 4px solid $yellow;
-        border-radius: 10px;
-    }
+        &:after {
+            top: 0;
+            left: 0;
+            border-top: 4px solid var(--main-color);
+            border-left: 4px solid var(--main-color);
+            border-radius: 10px;
+        }
+        &:before {
+            bottom: 0;
+            right: 0;
+            border-bottom: 4px solid var(--main-color);
+            border-right: 4px solid var(--main-color);
+            border-radius: 10px;
+        }
     }
 }
 .project {
@@ -125,8 +125,8 @@ button {
 
 @media screen and (max-width: 425px) {
     .container-form-contact {
-    .button {
-        align-self: center;
+        .button {
+            align-self: center;
+        }
     }
-}
 }

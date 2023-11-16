@@ -1,8 +1,13 @@
 import logo from "../../assets/image/logo.svg";
+import darkLogo from "../../assets/image/darklogo.svg"
 import { Link, animateScroll as scroll } from "react-scroll";
 import { useState } from "react";
+import { useDarkMode } from "../darkmode/Darkmode";
+import ModeSwitch from "../modeSwitch/ModeSwitch";
 
 export default function Navigation() {
+    const { isDarkMode } = useDarkMode();
+
     // Fait défiler la page vers le haut lorsque le logo est cliqué.
     const scrollToTop = () => {
         scroll.scrollToTop();
@@ -83,6 +88,10 @@ export default function Navigation() {
                         </Link>
                     </li>
                 </ul>
+                <ModeSwitch
+                    showLinks={showLinks}
+                />
+
                 {/* Bouton burger pour afficher/masquer les liens de navigation*/}
                 <button className="navbar__burger" onClick={handleShowLinks}>
                     <span className="burger-bar"></span>
@@ -90,7 +99,7 @@ export default function Navigation() {
                 {/* Si liens de navigation affichés, masquer logo, sinon l'afficher */}
                 <img
                     className={`${showLinks ? "none" : "logo"}`}
-                    src={logo}
+                    src={isDarkMode ? darkLogo : logo}
                     alt="logo Ax"
                     onClick={scrollToTop}
                     duration

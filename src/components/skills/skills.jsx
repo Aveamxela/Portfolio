@@ -9,11 +9,15 @@ import Github from "../../assets/image/github.png";
 import Figma from "../../assets/image/figma.png";
 import Wordpress from "../../assets/image/wordpress.png";
 import Wave from "../../assets/image/waveSkills.png";
+import darkWave from "../../assets/image/darkWaveSkills.png";
+import { useDarkMode } from "../darkmode/Darkmode";
 
 export default function Skills() {
+        const { isDarkMode } = useDarkMode();
+
     return (
         <section id="skills">
-            <img className="shapeSkills" src={Wave} alt="" />
+            <img className="shapeSkills" src={isDarkMode ? darkWave : Wave} alt="" />
             <div className="index-skills">
                 <h2 className="title-skills">Compétences</h2>
                 <ul>

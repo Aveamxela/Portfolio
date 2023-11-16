@@ -1,9 +1,14 @@
 #projects {
     padding: 0px 80px 120px 80px;
     position: relative;
-    background: linear-gradient(to top, $yellow,$light-yellow, $light-yellow);
+    background: linear-gradient(
+        to top,
+        var(--main-color),
+        var(--secondary-color),
+        var(--secondary-color)
+    );
     .titleProjects {
-        color: $black;
+        color: var(--tertiary-color);
     }
     .projects {
         display: flex;

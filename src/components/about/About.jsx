@@ -1,22 +1,26 @@
 import shapeAbout from "../../assets/image/forme_a_propos1.svg";
 import womanCoding from "../../assets/image/woman_coding.webp";
+import darkModeWomanCoding from "../../assets/image/darkMode_coding.png";
+import { useDarkMode } from "../../components/darkmode/Darkmode";
+
 
 export default function About() {
+      const { isDarkMode } = useDarkMode();
+
     return (
         <section id="about">
             <div className="container_about">
                 <img
                     className="womanCoding"
-                    src={womanCoding}
+                    // src={womanCoding}
+                    src={isDarkMode ? darkModeWomanCoding : womanCoding}
                     alt="Woman's coding illustration"
                 />
                 <div className="content_about">
                     <h1 className="title_about">Maëva Froger</h1>
                     <div className="dev_about">
-                        <h2 >Intégratrice web</h2>
-                        <h2 >
-                            Développeuse front-end
-                        </h2>
+                        <h2>Intégratrice web</h2>
+                        <h2>Développeuse front-end</h2>
                     </div>
                     <p className="description_about">
                         Mon voyage a débuté avec des études en littérature et

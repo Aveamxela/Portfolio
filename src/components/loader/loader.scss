@@ -4,7 +4,7 @@
     bottom: 0;
     width: 100%;
     min-height: 100vh;
-    background-color: $light-yellow;
+    background-color: var(--secondary-color);
     z-index: 7;
     animation: background-animation 0.5s 2.5s ease forwards;
 
@@ -23,9 +23,9 @@
     .big-line-X,
     .small-line-X,
     .round-line-A {
-        fill: black;
+        fill: var(--tertiary-color);
         fill-opacity: 1;
-        stroke: black;
+        stroke: var(--tertiary-color);
         stroke-width: 1;
         stroke-dasharray: 0;
         stroke-dashoffset: 100;
@@ -35,7 +35,7 @@
 
 @keyframes background-animation {
     0% {
-        background-color: $light-yellow;
+        background-color: var(--secondary-color);
         opacity: 1;
     }
     100% {
@@ -78,8 +78,8 @@
     }
     100% {
         stroke-dasharray: 100; /* Pas de trait complet*/
-        stroke-dashoffset: 0;/* Pas de décalage du tracé */
-        stroke-width: 0;/* Pas de contour */
-        fill-opacity: 1;/* Remplissage complet*/
+        stroke-dashoffset: 0; /* Pas de décalage du tracé */
+        stroke-width: 0; /* Pas de contour */
+        fill-opacity: 1; /* Remplissage complet*/
     }
 }
