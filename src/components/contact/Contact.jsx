@@ -55,13 +55,13 @@ export default function Contact() {
                     />
 
                     <label for="name">Nom :</label>
-                    <input type="text" name="name" id="name" />
+                    <input type="text" name="name"  />
 
                     <label for="email">Email :</label>
-                    <input type="email" name="email" id="email" />
+                    <input type="email" name="email"  />
 
                     <label for="message">Message :</label>
-                    <textarea name="message" id="message"></textarea>
+                    <textarea name="message" ></textarea>
 
                     <Button text="Envoyer" type="submit" />
                 </form>
