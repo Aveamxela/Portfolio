@@ -4,10 +4,25 @@ import Modal from "../modal/modal";
 import Button from "../button/button";
 
 export default function Project() {
+    const [projectsTypes, setProjectsTypes] = useState(["Tous"]);
     const [showModal, setShowModal] = useState(false);
     const [projects, setProjects] = useState([]); // Stocke les données des projets.
     // const [loading, setLoading] = useState(false);
-    const [selectedProjectId, setSelectedProjectId] = useState(null);//Stocke l'ID du projet sélectionné.
+    const [selectedProjectId, setSelectedProjectId] = useState(null); //Stocke l'ID du projet sélectionné.
+
+    document.addEventListener("selectedTypes", ({ detail }) => {
+        setProjectsTypes(detail.types);
+    });
+
+    function filteredProjects() {
+        return projects.filter((project) => {
+            if (projectsTypes.includes("Tous")) {
+                return true;
+            }
+            return projectsTypes.some((type) => project.type.includes(type));
+        });
+    }
+    console.log(filteredProjects());
 
     const openModal = (projectId) => {
         setShowModal(true);
@@ -16,7 +31,8 @@ export default function Project() {
     const closeModal = () => {
         setShowModal(false);
     };
-// Chargement des données des projets.
+
+    // Chargement des données des projets.
     useEffect(() => {
         // setLoading(true);
         fetchProjectsData()
@@ -37,10 +53,9 @@ export default function Project() {
     //         </>
     //     );
     // }
-
     return (
         <>
-            {projects.map((project, i) => {
+            {filteredProjects().map((project, i) => {
                 return (
                     <figure className="project" key={i}>
                         <img src={project.cover} alt={project.alt} />
@@ -56,7 +71,7 @@ export default function Project() {
                     </figure>
                 );
             })}
-            
+
             {showModal && selectedProjectId !== null && (
                 <Modal
                     projects={projects}

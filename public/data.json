@@ -145,7 +145,7 @@
         },
         {
             "id": 7,
-            "type": "Planification de projet",
+            "type": "Planification",
             "title": "MenuMaker",
             "subtitle": "Outil de création / diffusion / impression de menu",
             "cover": "/images/menu_maker.webp",
