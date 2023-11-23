@@ -54,13 +54,13 @@ export default function Contact() {
                         value="portfolioContact"
                     />
 
-                    <label htmlFor="name">Nom :</label>
+                    <label for="name">Nom :</label>
                     <input type="text" name="name" id="name" />
 
-                    <label htmlFor="email">Email :</label>
+                    <label for="email">Email :</label>
                     <input type="email" name="email" id="email" />
 
-                    <label htmlFor="message">Message :</label>
+                    <label for="message">Message :</label>
                     <textarea name="message" id="message"></textarea>
 
                     <Button text="Envoyer" type="submit" />
