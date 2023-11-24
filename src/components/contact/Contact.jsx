@@ -5,7 +5,8 @@ export default function Contact() {
     const [showModal, setShowModal] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
 
-    const handleFormSubmit = (e) => {
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
         // Récupération des valeurs du formulaire
         const name = e.target.name.value;
         const email = e.target.email.value;
@@ -15,13 +16,28 @@ export default function Contact() {
             setErrorMessage("Veuillez remplir tous les champs du formulaire.");
             e.target.reset();
         } else {
-            setShowModal(true);
-            setErrorMessage("");
-            // Réinitialise le formulaire
-            e.target.reset();
-        }
-    };
+           try {
+      // Soumettre les données au backend de Netlify
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          "form-name": "portfolioContact",
+          name,
+          email,
+          message,
+        }).toString(),
+      });
 
+      setShowModal(true);
+      setErrorMessage("");
+      e.target.reset();
+    } catch (error) {
+      console.error("Une erreur s'est produite lors de l'envoi du formulaire:", error);
+      setErrorMessage("Une erreur s'est produite lors de l'envoi du formulaire.");
+    }
+  }
+}; 
     const closeModal = () => {
         setShowModal(false);
     };
