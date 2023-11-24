@@ -6,7 +6,6 @@ export default function Contact() {
     const [errorMessage, setErrorMessage] = useState("");
 
     const handleFormSubmit = (e) => {
-        e.preventDefault();
         // Récupération des valeurs du formulaire
         const name = e.target.name.value;
         const email = e.target.email.value;
@@ -41,7 +40,7 @@ export default function Contact() {
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     onSubmit={handleFormSubmit}
-                    // action="/"
+                    action="/"
                 >
                     <input
                         type="hidden"
