@@ -40,7 +40,7 @@ export default function Contact() {
                     // Indique à Netlify de gérer ce formulaire
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
-                    onSubmit="ssubmit"
+                    onSubmit={handleFormSubmit}
                     // action="/"
                 >
                     <input
