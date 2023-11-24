@@ -36,32 +36,32 @@ export default function Contact() {
                     className="form-contact"
                     // Nom du formulaire utilisé par Netlify
                     name="portfolioContact"
-                    method="POST"
+                    method="post"
                     // Indique à Netlify de gérer ce formulaire
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     onSubmit={handleFormSubmit}
                     action="/"
                 >
-                    {errorMessage && (
-                        <p className="error-message">{errorMessage}</p>
-                    )}
-                    {/* Champ caché pour indiquer le nom du formulaire à Netlify */}
                     <input
                         type="hidden"
                         name="form-name"
                         // Indique à Netlify quel formulaire est soumis
                         value="portfolioContact"
                     />
+                    {errorMessage && (
+                        <p className="error-message">{errorMessage}</p>
+                    )}
+                    {/* Champ caché pour indiquer le nom du formulaire à Netlify */}
 
                     <label for="name">Nom :</label>
-                    <input type="text" name="name"  />
+                    <input type="text" name="name" />
 
                     <label for="email">Email :</label>
-                    <input type="email" name="email"  />
+                    <input type="email" name="email" />
 
                     <label for="message">Message :</label>
-                    <textarea name="message" ></textarea>
+                    <textarea name="message"></textarea>
 
                     <Button text="Envoyer" type="submit" />
                 </form>
