@@ -69,14 +69,14 @@ export default function Contact() {
                     )}
                     {/* Champ caché pour indiquer le nom du formulaire à Netlify */}
 
-                    <label for="name">Nom :</label>
-                    <input type="text" name="name" />
+                    <label htmlFor="name">Nom :</label>
+                    <input type="text" name="name" id="name"/>
 
-                    <label for="email">Email :</label>
-                    <input type="email" name="email" />
+                    <label htmlFor="email">Email :</label>
+                    <input type="email" name="email" id="email" />
 
-                    <label for="message">Message :</label>
-                    <textarea name="message"></textarea>
+                    <label htmlFor="message">Message :</label>
+                    <textarea name="message" id="message"></textarea>
 
                     <Button text="Envoyer" type="submit" />
                 </form>
